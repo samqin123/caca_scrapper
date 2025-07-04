@@ -5,10 +5,25 @@
 """
 
 import logging
+import os
+import re
 from crawler import get_detail_urls, get_qa_content
 from file_handler import save_to_markdown, save_links_to_markdown
 from config import get_disease_list
-import re
+
+def get_crawled_list(directory="."):
+    """获取已爬取的病种列表"""
+    crawled_list = set()
+    if not os.path.isdir(directory):
+        logging.error(f"指定的目录不存在: {directory}")
+        return crawled_list
+
+    for filename in os.listdir(directory):
+        if filename.startswith('caca_') and filename.endswith('_qa.md'):
+            match = re.search(r'caca_(.*?)_qa\.md', filename)
+            if match:
+                crawled_list.add(match.group(1))
+    return crawled_list
 
 def main():
     """
@@ -25,11 +40,21 @@ def main():
         logging.error("未能获取到病种列表，程序退出。")
         return
 
+    crawled_diseases = get_crawled_list("caca_scraper")
+    logging.info(f"检测到已爬取 {len(crawled_diseases)} 个病种: {crawled_diseases}")
+
     total_articles_crawled = 0
+    newly_crawled_count = 0
 
     # 2. 遍历所有病种进行爬取
     for disease_name, disease_id in disease_list:
+        safe_disease_name = re.sub(r'[\/:]', '_', disease_name)
+        if safe_disease_name in crawled_diseases:
+            logging.info(f"【{disease_name}】已存在，跳过。")
+            continue
+
         logging.info(f"========== 开始处理病种: {disease_name} (ID: {disease_id}) ==========")
+        newly_crawled_count += 1
 
         # 3. 为当前病种获取所有详情页的标题和链接
         detail_info = get_detail_urls(disease_id, disease_name)
@@ -64,7 +89,7 @@ def main():
         total_articles_crawled += articles_count
         logging.info(f"【{disease_name}】处理完成！共抓取并保存了 {articles_count} 篇文章。")
 
-    logging.info(f"\n========== 所有任务完成！总共抓取了 {len(disease_list)} 个病种，合计 {total_articles_crawled} 篇文章。 ==========")
+    logging.info(f"\n========== 所有任务完成！总共抓取了 {newly_crawled_count} 个新病种，合计 {total_articles_crawled} 篇文章。 ==========")
 
 if __name__ == '__main__':
     main()

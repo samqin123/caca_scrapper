@@ -1,0 +1,18 @@
+# CACA科普网【头颈肿瘤】问答链接列表
+
+- [头颈部肿瘤患者治疗后为什么需要颈部锻炼？如何进行颈部锻炼？](https://ask.cacakp.com/question/detail/id/5122)
+- [头颈部肿瘤患者手术或放疗后出现吞咽障碍，吃饭时应该注意什么？](https://ask.cacakp.com/question/detail/id/5106)
+- [头颈部肿瘤患者手术或放疗后出现吞咽功能障碍，可以做哪些帮助恢复吞咽功能的康复训练？](https://ask.cacakp.com/question/detail/id/5105)
+- [怎样预防和和治疗放疗导致的皮肤反应？](https://ask.cacakp.com/question/detail/id/5098)
+- [头颈部肿瘤放疗过程中会出现哪些皮肤反应？](https://ask.cacakp.com/question/detail/id/5097)
+- [头颈部肿瘤患者治疗后为何会出现颈部水肿？](https://ask.cacakp.com/question/detail/id/5096)
+- [头颈部肿瘤患者放疗后能拔牙吗？](https://ask.cacakp.com/question/detail/id/5094)
+- [头颈部肿瘤患者放疗前为什么需要口腔检查？](https://ask.cacakp.com/question/detail/id/5093)
+- [什么是放射性龋齿？](https://ask.cacakp.com/question/detail/id/5092)
+- [治疗结束后口干会缓解吗？](https://ask.cacakp.com/question/detail/id/5091)
+- [头颈部肿瘤患者放疗后为什么会出现口干？](https://ask.cacakp.com/question/detail/id/5090)
+- [头颈部肿瘤放化疗后出现味觉改变怎么办？](https://ask.cacakp.com/question/detail/id/5087)
+- [头颈部肿瘤患者放化疗期间，饮食需要注意哪些？](https://ask.cacakp.com/question/detail/id/5086)
+- [头颈部肿瘤患者治疗后医生要求定期复查，请问要多久复查一次呢？都需要复查哪些项目？](https://ask.cacakp.com/question/detail/id/5085)
+- [吸烟、嗜酒会增加患头颈部肿瘤的风险吗？](https://ask.cacakp.com/question/detail/id/5082)
+- [头颈部肿瘤有哪些特点？](https://ask.cacakp.com/question/detail/id/5081)
